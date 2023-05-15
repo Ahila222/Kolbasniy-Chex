@@ -48,12 +48,14 @@ img {
     max-height: 100%;
 }
 .telefon_screen {display: none;}
-.main_menu {
+.main_menu, .main_menu1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 10px 20px 10px;
     width: 100%;
+    position: fixed;
+    background: black;
 }
 .conteiner {
     display: flex;
@@ -71,11 +73,12 @@ img {
 .conteiner div:hover, .home:hover {
     transform: scale(1.2);
 }
-.main_menu a {
+.main_menu a, .main_menu:visited,
+.main_menu1 a, .main_menu1:visited {
     text-decoration: none;
     color:aliceblue;
 }
-.main_menu a:hover {
+.main_menu,.main_menu1 a:hover {
     color: rgb(124, 30, 30);
 }
 body {
@@ -83,11 +86,10 @@ body {
     padding: 0;
 }
 main {
-    background: url(main_fon.jpg) center/contain fixed;
+    background: url(main_fon.jpg) center/100% fixed;
     color: aliceblue;
     padding: 0;
     margin: 0;
-    height: 100vh;
 }
 p {
     margin: 0;
@@ -104,7 +106,7 @@ p {
         flex-direction: column;
         align-items: center;
         background: black;
-        height: 100vh;
+        height: 100%;
         padding: 20px 10px 0 10px;
     }
     .telefon_screen div {margin: 10px 0 10px 0;}
@@ -119,5 +121,21 @@ p {
     main {
         display: flex;
     }
-
+}
+.video, .audio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.video_youtube, .audio_razriv {
+    margin: 20px 0 20px 0;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgb(138, 138, 138);
+}
+.video_youtube_margin,
+.audio_margin
+{margin-top: 100px;}
+.text {
+    margin-left: 5%;
 }
