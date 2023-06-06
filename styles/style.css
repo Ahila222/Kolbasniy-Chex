@@ -39,9 +39,9 @@
          url('../fonts/oswald-v49-cyrillic-700.svg#Oswald') format('svg'); /* Legacy iOS */
   }
 .header {
-    width: 100wh;
+    width: 100%;
     background: black;
-    position: absolute;
+    position: fixed;
 }
 img {
     display: block;
@@ -84,6 +84,8 @@ img {
     color: rgb(124, 30, 30);
 }
 body {
+    display: flex;
+    flex-direction: column;
     margin: 0;
     padding: 0;
 }
@@ -93,7 +95,7 @@ main {
     padding: 0;
     margin: 0;
     width: 100%;
-    height: 100%;   
+    height: 100vh;
 }
 p {
     margin: 0;
@@ -154,4 +156,7 @@ p {
 }
 .nijniy-otstup {
     margin-bottom: 20px;
+}
+.text-index-page {
+    margin: 40% 0 0 20px;
 }
